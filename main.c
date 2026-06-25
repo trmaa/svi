@@ -5,8 +5,6 @@
  * Author: Pablo Trik Marin (trmaa) <mail@pablotrik.online>
  */
 
-#include "bool.h"
-#include "string.h"
 #include "term-io.h"
 
 struct {

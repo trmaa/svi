@@ -1,4 +1,4 @@
-ccflags = -fno-stack-protector -Wno-implicit-int -Wno-implicit-function-declaration -std=c99
+ccflags = -fno-stack-protector -Wno-implicit-int -Wno-implicit-function-declaration -std=c23
 ldflags = -nostdlib -nostartfiles
 
 srcc = $(wildcard *.c)

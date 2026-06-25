@@ -19,6 +19,6 @@ struct term_conf {
 
 void term_init(void);
 void term_restore(void);
-int  kbhit(void);
+bool  kbhit(void);
 key_t getch();
 void putch(char);

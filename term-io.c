@@ -29,7 +29,7 @@ void term_restore(void)
 		ioctl(STDIN, 0x5402, &old_conf);
 }
 
-int kbhit(void)
+bool kbhit(void)
 {
 	int n = 0;
 	ioctl(STDIN, FIONREAD, &n);
