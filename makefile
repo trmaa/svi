@@ -1,5 +1,4 @@
 ccflags = -fno-stack-protector -Wno-implicit-int -Wno-implicit-function-declaration -std=c23
-ldflags = -nostdlib -nostartfiles
 
 srcc = $(wildcard *.c)
 srcs = $(wildcard *.s)
@@ -21,7 +20,7 @@ obj/%.o: %.s
 	as $< -o $@
 
 svi: $(addprefix obj/,$(obj)) | obj
-	cc $^ -o $@ $(ldflags)
+	ld $^ -o $@
 
 clean:
 	rm -r obj
