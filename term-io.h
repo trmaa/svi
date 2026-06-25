@@ -6,7 +6,6 @@
 #define ECHO   0x08
 #define VMIN   6
 #define VTIME  5
-#define POLLIN 0x001
 #define FIONREAD 0x541B
 
 typedef unsigned long long key_t;
