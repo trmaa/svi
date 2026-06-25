@@ -1,4 +1,4 @@
-ccflags = -fno-stack-protector -Wno-implicit-int -Wno-implicit-function-declaration -std=c23
+ccflags = -Iinclude -fno-stack-protector -Wno-implicit-int -Wno-implicit-function-declaration -std=c23
 
 srcc = $(wildcard *.c)
 srcs = $(wildcard *.s)

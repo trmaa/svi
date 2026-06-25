@@ -1,1 +1,2 @@
 *.s binary
+include/* linguist-vendored
