@@ -24,3 +24,9 @@ svi: $(addprefix obj/,$(obj)) | obj
 
 clean:
 	rm -r obj
+
+run:
+	./svi
+
+install:
+	cp svi /usr/bin/

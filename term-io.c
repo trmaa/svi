@@ -53,3 +53,11 @@ void putch(char c)
 {
 	write(STDOUT, &c, 1);
 }
+
+void clrscr(void)
+{
+	// Clear
+	print("\033[2J");
+	// Top
+	print("\033[H");
+}

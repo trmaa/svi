@@ -7,4 +7,5 @@ enum status {
 	OS_ERROR = -1
 };
 
+void help(enum status);
 void fatal(char *, void (*)(enum status), enum status);

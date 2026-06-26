@@ -21,3 +21,4 @@ void term_restore(void);
 bool  kbhit(void);
 key_t getch();
 void putch(char);
+void clrscr(void);

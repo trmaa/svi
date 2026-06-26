@@ -2,6 +2,13 @@
 #include "string.h"
 #include "debug.h"
 
+void help(enum status err)
+{
+	print("USE:\n");
+	print("\tsvi <file>\n");
+	exit(err);
+}
+
 void fatal(char *msg, void (*callback)(enum status), enum status err)
 {
 	if (msg != NULL) {
